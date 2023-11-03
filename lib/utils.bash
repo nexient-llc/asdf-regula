@@ -31,8 +31,6 @@ list_github_tags() {
 }
 
 list_all_versions() {
-	# TODO: Adapt this. By default we simply list the tag names from GitHub releases.
-	# Change this function if regula has other means of determining installable versions.
 	list_github_tags
 }
 
@@ -40,9 +38,9 @@ download_release() {
 	local version filename url
 	version="$1"
 	filename="$2"
-
-	# TODO: Adapt the release URL convention for regula
-	url="$GH_REPO/archive/v${version}.tar.gz"
+	local platform=$(uname | sed 's/Darwin/macOS')
+	local architecture=$(uname -m | tr '[:upper:]' '[:lower:]')
+	url="$GH_REPO/releases/download/v${version}/regula_${version}_${platform}_${architecture}"
 
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"

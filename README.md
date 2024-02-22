@@ -1,6 +1,6 @@
 <div align="center">
 
-# asdf-regula [![Build](https://github.com/chris-taylor-ntt/asdf-regula/actions/workflows/build.yml/badge.svg)](https://github.com/chris-taylor-ntt/asdf-regula/actions/workflows/build.yml) [![Lint](https://github.com/chris-taylor-ntt/asdf-regula/actions/workflows/lint.yml/badge.svg)](https://github.com/chris-taylor-ntt/asdf-regula/actions/workflows/lint.yml)
+# asdf-regula [![Build](https://github.com/nexient-llc/asdf-regula/actions/workflows/build.yml/badge.svg)](https://github.com/cnexient-llc/asdf-regula/actions/workflows/build.yml) [![Lint](https://github.com/nexient-llc/asdf-regula/actions/workflows/lint.yml/badge.svg)](https://github.com/nexient-llc/asdf-regula/actions/workflows/lint.yml)
 
 [regula](https://github.com/fugue/regula) plugin for the [asdf version manager](https://asdf-vm.com).
 
@@ -24,7 +24,7 @@ Plugin:
 ```shell
 asdf plugin add regula
 # or
-asdf plugin add regula https://github.com/chris-taylor-ntt/asdf-regula.git
+asdf plugin add regula https://github.com/nexient-llc/asdf-regula.git
 ```
 
 regula:
@@ -50,8 +50,8 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/chris-taylor-ntt/asdf-regula/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/nexient-llc/asdf-regula/graphs/contributors)!
 
 # License
 
-See [LICENSE](LICENSE) © [Chris Taylor](https://github.com/chris-taylor-ntt/)
+See [LICENSE](LICENSE) © [Launch by NTT DATA](https://github.com/nexient-llc/)

@@ -38,7 +38,7 @@ download_release() {
 	version="$1"
 	filename="$2"
 	local platform=$(uname | sed 's/Darwin/macOS/')
-	local architecture=$(uname -m | tr '[:upper:]' '[:lower:]')
+	local architecture=$(uname -m | tr '[:upper:]' '[:lower:]' | sed -e s/aarch64/arm64/)
 	url="$GH_REPO/releases/download/v${version}/regula_${version}_${platform}_${architecture}.tar.gz"
 
 	echo "* Downloading $TOOL_NAME release $version... to $filename from $url"
